@@ -1,0 +1,1355 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* body {
+    min-height: 100vh;
+} */
+body {
+    background: rgb(5, 19, 43);
+}
+.navbar {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 100px;
+    transition: 1s;
+    
+}
+.navbar.scrolling {
+    background: rgba(17, 34, 87, 0.932);
+    height: 70px;
+    padding: 15px 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.navbar.scrolling .name{
+    color: black;
+    transition: 1s;
+}
+.navbar .name {
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 30px;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+.navbar .name span {
+    color:  black;
+    transition: 1s;
+}
+.navbar .nav {
+    position: relative;
+    display: flex;
+    right: 0;
+    align-items: center;
+}
+
+.navbar .nav a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 15px;
+    padding: 0 10px;
+    font-family: 'Source Code Pro', sans-serif;
+    /* border-radius: 20px; */
+    /* transition: 0.3s;
+    transition-property: color, background; */
+}
+.navbar .nav .resume {
+    color: rgb(9, 226, 190);
+    text-decoration: none;
+    border: 1px solid rgb(9, 226, 190);
+    padding: 10px 12px;
+    border-radius: 5px;
+}
+.navbar .nav .resume:hover {
+    background: rgba(24, 46, 126, 0.966);
+    font-weight: normal;
+    transform: none;
+}
+.navbar .nav a:hover {
+    font-weight: 500;
+    color: rgb(9, 226, 190);
+    transform: translateY(5px);
+}
+
+.navbar .mobile-buttons {
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+/* section 1 desktop */
+.layout {
+    max-width: 1300px;
+    padding: 0 75px;
+    margin: auto;
+}
+.home {
+    display: flex;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+
+
+}
+.home .layout {
+    margin-top: 150px;
+    margin-left: 75px;
+}
+.home .home-content .text-1 {
+    font-size: 19px;
+    font-weight: bold;
+    font-family: 'Source Code Pro', sans-serif;
+    color: rgb(9, 226, 190);
+}
+.home .home-content .text-2 {
+    font-size: 60px;
+    font-weight: 700;
+    color: rgb(184, 175, 175);
+}
+.home .home-content .text-3 {
+    font-size: 55px;
+    margin: 5px 0;
+    color: rgb(114, 114, 114);
+    font-weight: 700;
+}
+.home .home-content .text-4 {
+    font-size: 20px;
+    margin: 5px 0;
+    color: rgb(179, 172, 172);
+    font-weight: 500;
+    
+}
+.get-in-touch {
+    margin-top: 35px;
+}
+.get-in-touch a{
+    color: rgb(9, 226, 190);
+    text-decoration: none;
+    border: 1px solid rgb(9, 226, 190);
+    padding: 15px;
+    border-radius: 5px;
+    font-family: 'Source Code Pro', sans-serif;
+    
+}
+.get-in-touch a:hover{
+     background: rgba(24, 46, 126, 0.966);
+}
+.about {
+    display: flex;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+}
+.about .layout {
+    margin-top: 150px;
+    margin-left: 150px;
+}
+.about .about-content .title-about {
+    
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(184, 175, 175);
+   
+}
+.about .about-content .title-about span {
+    font-size: 30px;
+    color: rgb(9, 226, 190);
+    font-family: 'Source Code Pro', sans-serif;
+}
+.about .about-content .title-about .line {
+    width: 400px;
+    height: 1px;
+    vertical-align: middle;
+    margin-left: 14px;
+
+}
+.about-text {
+    font-size: 17px;
+    margin: 5px 0;
+    color: rgb(179, 172, 172);
+    font-weight: 500;
+}
+
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    float: left;
+    margin-top: 15px;
+    margin-right: 50px;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  [class^="icon"] {
+    position: relative;
+    margin-right: 12px;
+    fill: rgb(9, 226, 190);
+  }
+  
+  .left [class^="icon"], .right [class^="icon"]  {
+    width: 12px;
+    height: 12px;
+
+  }
+  
+.row {
+    display: flex;
+}
+.about .row img {
+    filter: grayscale(100%);
+    height: 300px;
+    width: 300px;
+    margin-left: 50px;
+    margin-top: 50px;
+    border-radius: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 10px 25px 0 rgba(0, 0, 0, 0.15);
+}
+.about .row img:hover {
+    filter: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.projects {
+    display: flex;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+}
+.projects .layout {
+    margin-top: 150px;
+    margin-left: 250px;
+}
+.projects .projects-content .title-projects {
+    
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(184, 175, 175);
+   
+}
+.projects .projects-content .title-projects span {
+    font-size: 30px;
+    color: rgb(9, 226, 190);
+    font-family: 'Source Code Pro', sans-serif;
+}
+.projects .projects-content .title-projects .line {
+    width: 550px;
+    height: 1px;
+    margin-left: 16px;
+
+}
+.project-1 {
+    height: 90vh;
+}
+.project-1 .row img {
+    filter: grayscale(100%);
+    height: 330px;
+    width: 530px;
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 10px 25px 0 rgba(0, 0, 0, 0.15);
+}
+.project-1 .row img:hover {
+    filter: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.projects-1-text {
+    margin-top: 50px;
+    font-size: 17px;
+    margin: 5px 0;
+    color: rgb(179, 172, 172);
+    font-weight: 500;
+}
+
+.projects-1-text span {
+    color: rgb(9, 226, 190);
+    font-family: 'Source Code Pro', sans-serif;
+}
+.projects-1-text .name {
+    color: rgb(184, 175, 175);
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+}
+.projects-1-text a {
+    text-decoration: none;
+    color: rgb(184, 175, 175);
+
+}
+.projects-1-text a:hover {
+    color: rgb(9, 226, 190);
+}
+.projects-1-text .project-1-lang {
+    margin-top: 70px;
+    font-family: 'Source Code Pro';
+    justify-content: space-between;
+    font-size: 15px;
+}
+.project-2 {
+    height: 95vh;
+}
+.project-2 .row img {
+    filter: grayscale(100%);
+    height: 330px;
+    width: 530px;
+    margin-left: 20px;
+    margin-top: 40px;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 10px 25px 0 rgba(0, 0, 0, 0.15);
+}
+.project-2 .row img:hover {
+    filter: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.projects-2-text {
+    margin-top: 50px;
+    font-size: 17px;
+    margin: 5px 0;
+    color: rgb(179, 172, 172);
+    font-weight: 500;
+}
+.projects-2-text span {
+    color: rgb(9, 226, 190);
+    font-family: 'Source Code Pro', sans-serif;
+}
+.projects-2-text .name {
+    color: rgb(184, 175, 175);
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+}
+.projects-2-text a {
+    text-decoration: none;
+    color: rgb(184, 175, 175);
+
+}
+.projects-2-text a:hover {
+    color: rgb(9, 226, 190);
+}
+.projects-2-text .project-2-lang {
+    margin-top: 70px;
+    font-family: 'Source Code Pro';
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+.contact {
+    margin-top: 600px;
+    display: flex;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+}
+.contact .layout {
+    margin-top: 150px;
+    margin-left: 150px;
+}
+.contact .contact-content .title-contact {
+    
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(184, 175, 175);
+   
+}
+.contact .contact-content .title-contact span {
+    font-size: 30px;
+    color: rgb(9, 226, 190);
+    font-family: 'Source Code Pro', sans-serif;
+}
+.contact .contact-content .title-contact .line {
+    width: 400px;
+    height: 1px;
+    vertical-align: middle;
+    margin-left: 14px;
+
+}
+
+
+.contact-c input[type=text], select, textarea {    
+    width: 100%; 
+    padding: 12px; 
+    border: none; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical;
+    background:rgb(4, 31, 121);
+    outline: none;
+  }
+  
+
+.msg {
+    color: rgb(9, 226, 190);
+    text-decoration: none;
+    border: 1px solid rgb(9, 226, 190);
+    padding: 15px;
+    border-radius: 5px;
+    font-family: 'Source Code Pro', sans-serif;
+    background: rgb(5, 19, 43);
+  }
+  
+
+.msg:hover {
+    background: rgba(24, 46, 126, 0.966);
+    transform: translateY(2px);
+    cursor: pointer;
+  }
+
+  .contact-c {
+    margin-top: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 10px 25px 0 rgba(0, 0, 0, 0.15);
+    max-width: 800px;
+    width: 800px;
+    padding: 25px 40px 10px 40px;
+    border-radius: 14px;
+  }
+  .footer {
+      margin-top: 400px;
+      text-align: center;
+      margin-bottom: 20px;
+      color: rgb(184, 175, 175);
+      font-family: 'Poppins', sans-serif;
+      width: 100%;
+  }
+  .container_r {
+    background: rgb(235, 228, 228);
+    margin-top: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 10px 25px 0 rgba(0, 0, 0, 0.15);
+    max-width: 1000px;
+    width: 100%;
+    margin-left: 50px;
+    height: 220vh;
+    border-radius: 15px;
+    display: flex;
+  }
+  .container_r .left_r {
+    background-color: rgb(175, 174, 174);
+    width: 320px; 
+    display: inline-block;
+  }
+  .container_r .left_r img {
+    border-radius: 100%;
+     width: 250px; 
+     height: 250px;
+     margin-top: 20px; 
+     margin-left: 20px;
+     margin-right: 3px;
+  }
+  .container_r .left_r .name {
+    text-align: center;
+     color: rgb(77, 76, 76); 
+     font-size: 20px; 
+     font-family: 'Poppins', sans-serif; 
+     text-transform: uppercase; 
+     font-weight: 600;
+  }
+  .container_r .left_r .title {
+    font-size: 15px; 
+    text-transform: uppercase;
+     text-align: center; 
+     color: rgb(77, 76, 76); 
+     font-family: 'Poppins', sans-serif; 
+     font-weight:500;
+  }
+  .container_r .left_r hr {
+    color: rgb(75, 75, 75);
+    outline: none; 
+    margin-top: 40px; 
+  }
+  .email, .phone, .linkedin, .location {
+    display: flex; 
+    margin-top: 20px;
+  }
+  .email .iconify, .phone .iconify, .linkedin .iconify, .location .iconify {
+    color: rgb(54, 53, 53); 
+    width: 40px; 
+    height: 40px;   
+     margin-left: 18px; 
+     border: 1px solid rgb(77, 76, 76); 
+     border-radius:50%; 
+     padding: 10px;
+  }
+  .email a, .email p, .phone p, .linkedin a ,.linkedin p, .location p{
+    margin-top: 6px;
+    margin-left: 2px;  
+    color: rgb(77, 76, 76); 
+    font-size: 14px; 
+    font-family: 'Poppins', sans-serif;
+     font-weight: 600;
+     text-decoration: none;
+     margin-right: 5px;
+  }
+  .skills {
+    display: inline-block;
+  }
+  .skills .soft {
+   color: rgb(46, 46, 46); 
+   text-align: center; 
+   margin-top: 45px;
+  }
+  .container_r .left_r .skills hr {
+    color: rgb(54, 53, 53); 
+    margin-top: 10px;
+    height: 2px;
+  }
+  .skills ul {
+    margin-left: 75px; 
+    color: rgb(77, 76, 76);
+     font-size: 15px; 
+     font-family: 'Poppins', sans-serif;
+     font-weight: 600;
+  }
+  .skills h3 {
+    color: rgb(46, 46, 46); 
+    text-align: center;
+    margin-top: 30px;
+  }
+  .right_r .objective, .education {
+    margin-top: 40px; 
+    margin-left: 20px;
+  }
+  .objective h2, .education h2 {
+    text-transform: uppercase; font-size: 20px;
+  }
+  .objective hr, .education hr {
+    width: 500px; height: 2px; 
+  }
+  .education h4 {
+      margin-top: 25px;
+      
+  }
+  .education h3 {
+    margin-top:25px; text-transform: uppercase;
+  }
+  .education ul {
+    list-style: circle; margin-left: 34px;
+  }
+  .copy .layout {
+      margin-top: 200px;
+      margin-left: 50px;
+  }
+  .copy .download-copy .title-copy {
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(184, 175, 175); 
+  }
+  .copy .download-copy .title-copy span {
+    font-size: 30px;
+    color: rgb(9, 226, 190);
+    font-family: 'Source Code Pro', sans-serif;
+  }
+  .title-copy .line {
+    width: 400px;
+    height: 1px;
+    vertical-align: middle;
+    margin-left: 14px;
+  }
+  .download-copy {
+    margin-top: 35px;
+    margin-left: 50px;
+}
+.download-copy a{
+    color: rgb(9, 226, 190);
+    text-decoration: none;
+    border: 1px solid rgb(9, 226, 190);
+    padding: 15px;
+    border-radius: 5px;
+    font-family: 'Source Code Pro', sans-serif;
+
+    
+}
+.download-copy a:hover{
+     background: rgba(24, 46, 126, 0.966);
+}
+/* resume page responsive */
+@media (max-width: 1010px) {
+
+
+    .container_r {
+        max-width: 750px;
+        width: 100%;
+        margin-left: 20px;
+        height: 200vh;
+        display: flex;
+      }
+      .container_r .left_r {
+        background-color: rgb(175, 174, 174);
+        width: 200px; 
+        display: inline-block;
+      }
+      .container_r .left_r img {
+        border-radius: 100%;
+         width: 150px; 
+         height: 150px;
+         margin-top: 20px; 
+         margin-left: 25px;
+      }
+      .container_r .left_r .name {
+         font-size: 17px; 
+
+      }
+      .container_r .left_r hr {
+        margin-top: 30px; 
+        
+      }
+      .email, .phone, .linkedin, .location {
+        display: flex; 
+        margin-top: 10px;
+      }
+      .email .iconify, .phone .iconify, .linkedin .iconify, .location .iconify {
+        color: rgb(54, 53, 53); 
+        width: 30px; 
+        height: 30px;   
+         margin-left: 16px; 
+         padding: 7px;
+      }
+      .email a, .email p, .phone p, .linkedin a ,.linkedin p, .location p{
+        margin-top: 6px;
+        margin-left: 2px;  
+        color: rgb(77, 76, 76); 
+        font-size: 10px; 
+         margin-right: 5px;
+      }
+      .skills {
+        display: inline-block;
+      }
+      .skills h3 {
+       font-size: 17px; 
+       text-align: center; 
+       margin-top: 35px;
+
+      }
+      .right_r {
+          margin-right: 5px;
+      }
+      .container_r .left_r .skills hr {
+         
+        margin-top: 10px;
+        height: 2px;
+        
+      }
+      .skills ul {
+        margin-left: 50px; 
+         font-size: 12px; 
+      }
+      .objective p {
+          font-size: 13px;
+      }
+      .right_r .objective, .education {
+        margin-top: 40px; 
+        margin-left: 20px;
+      }
+      .objective h2, .education h2 {
+        text-transform: uppercase;
+         font-size: 17px;
+      }
+      .objective hr, .education hr {
+        width: 400px;
+         height: 2px; 
+      }
+      .education h4 {
+          margin-top: 25px;
+          font-size: 14px;
+      }
+      .education h3 {
+        margin-top:25px; 
+        text-transform: uppercase;
+        font-size: 17px;
+      }
+      .education p {
+          font-size: 14px;
+      }
+      .education ul {
+        list-style: circle;
+         margin-left: 34px;
+         font-size: 14px;
+      }
+      .copy .layout {
+          margin-top: 200px;
+          margin-left: 50px;
+      }
+      .copy .download-copy .title-copy {
+        font-size: 30px;
+        font-weight: 700;
+        color: rgb(184, 175, 175); 
+      }
+      .copy .download-copy .title-copy span {
+        font-size: 30px;
+        color: rgb(9, 226, 190);
+        font-family: 'Source Code Pro', sans-serif;
+      }
+      .title-copy .line {
+        width: 400px;
+        height: 1px;
+        vertical-align: middle;
+        margin-left: 14px;
+      }
+      .download-copy {
+        margin-top: 35px;
+        margin-left: 50px;
+    }
+    .download-copy a{
+        color: rgb(9, 226, 190);
+        text-decoration: none;
+        border: 1px solid rgb(9, 226, 190);
+        padding: 15px;
+        border-radius: 5px;
+        font-family: 'Source Code Pro', sans-serif;
+    
+        
+    }
+    .footer {
+        margin-top: 400px;
+        font-size: 16px;
+        width: 100%;
+    }
+
+
+}
+@media (max-width: 803px) {
+    .container_r {
+        max-width: 380px;
+        width: 100%;
+        margin-left: 0px;
+        height: 155vh; /* or 140 vh but 140 is ideal */
+        display: flex;
+      }
+      .container_r .left_r {
+        width: 130px; 
+        display: inline-block;
+      }
+      .container_r .left_r img {
+        border-radius: 100%;
+         width: 70px; 
+         height: 70px;
+         margin-top: 20px; 
+         margin-left: 25px;
+      }
+      .container_r .left_r .name {
+        text-align: center;
+         color: rgb(77, 76, 76); 
+         font-size: 10px; 
+         font-family: 'Poppins', sans-serif; 
+         text-transform: uppercase; 
+         font-weight: 600;
+      }
+      .container_r .left_r .title {
+        font-size: 9px; 
+        text-transform: uppercase;
+         text-align: center; 
+         color: rgb(77, 76, 76); 
+         font-family: 'Poppins', sans-serif; 
+         font-weight:500;
+      }
+      .container_r .left_r hr {
+        width: 130px;
+        margin-top: 18px; 
+      }
+      .email, .phone, .linkedin, .location {
+        display: flex; 
+        margin-top: 20px;
+      }
+      .email .iconify, .phone .iconify, .linkedin .iconify, .location .iconify {
+        color: rgb(54, 53, 53); 
+        width: 20px; 
+        height: 20px;   
+         margin-left: 18px; 
+         border: 1px solid rgb(77, 76, 76); 
+         border-radius:50%; 
+         padding:5px;
+      }
+      .email a, .email p, .phone p, .linkedin a ,.linkedin p, .location p{
+        margin-top: 0px;
+        margin-left: 2px;  
+        color: rgb(77, 76, 76); 
+        font-size: 8px; 
+        font-family: 'Poppins', sans-serif;
+         font-weight: 600;
+         text-decoration: none;
+         margin-right: 5px;
+      }
+      .skills {
+        display: inline-block;
+      }
+      .skills .soft {
+       color: rgb(46, 46, 46);       
+       margin-top: 45px;
+       
+      }
+      .container_r .left_r .skills hr {
+        color: rgb(54, 53, 53); 
+        margin-top: 7px;
+        height: 2px;
+      }
+      .skills ul {
+        margin-left: 40px; 
+        color: rgb(77, 76, 76);
+         font-size: 9px; 
+         font-family: 'Poppins', sans-serif;
+         font-weight: 600;
+      }
+      .skills h3 {
+        color: rgb(46, 46, 46); 
+        text-align: center;
+        margin-top: 30px;
+        font-size: 13px;
+      }
+      .objective p {
+        font-size: 8px;
+  
+    }
+    .right_r .objective, .education {
+      margin-top: 40px; 
+      margin-left: 20px;
+    }
+    .objective h2, .education h2 {
+      text-transform: uppercase;
+       font-size: 14px;
+    }
+    .objective hr, .education hr {
+      width: 110px;
+       height: 2px; 
+    }
+    .education h4 {
+        margin-top: 25px;
+        font-size: 10px;
+    }
+    .education h3 {
+      margin-top:25px; 
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+    .education p {
+        font-size: 8px;
+    }
+    .education ul {
+      list-style: circle;
+       margin-left: 34px;
+       font-size: 9px;
+    }
+      
+
+
+
+
+      .copy .layout {
+          margin-top: 200px;
+          margin-left: 25px;
+      }
+      .copy .download-copy .title-copy {
+        font-size: 20px;
+
+      }
+      .copy .download-copy .title-copy span {
+        font-size: 20px;
+
+      }
+      .title-copy .line {
+        width: 200px;
+
+      }
+      .download-copy {
+        margin-top: 35px;
+        margin-left: 25px;
+    }
+
+    .footer {
+        margin-top: 400px;
+        font-size: 16px;
+        width: 100%;
+    }
+    
+
+}
+/* end of section 1 on desktop */
+@media (max-width: 1250px) {
+    /* Navigation Bar on Tablet */
+    .navbar .mobile-buttons {
+        display: block;
+        
+    }
+    
+    .navbar .nav {
+        position: fixed;
+        background: rgba(0, 28, 128, 0.966);
+        flex-direction: column;
+        min-width: 200px;
+        height: 50vh;
+        top: 0;
+        right: -1000px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        transition: 0.6s;
+        
+    }
+    .navbar .nav.opened {
+        right: 0;
+    }
+
+    .navbar .nav .cta-mobile {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 25px;
+    }
+
+    .navbar .nav a{
+        display: block;
+        font-size: 20px;
+        margin: 20px;
+        padding: 0;
+    }
+    .navbar.scrolling {
+        background: rgba(17, 34, 87, 0.829);      
+        height: 50px;
+        padding: 15px 60px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    }
+    /* end Navigation Bar on tablet  */
+    /* section one name.. on tablet */
+    .home .layout {
+        margin-top: 150px;
+        margin-left: 10px;
+    }
+    .home .home-content .text-2 {
+        font-size: 45px;
+        font-weight: 700;
+        color: rgb(184, 175, 175);
+    }
+    .home .home-content .text-3 {
+        font-size: 45px;
+        margin: 5px 0;
+        color: rgb(114, 114, 114);
+        font-weight: 700;
+    }
+    .home .home-content .text-4 {
+        font-size: 15px;
+        margin: 5px 0;
+        color: rgb(179, 172, 172);
+        font-weight: 500;
+    }
+    /* end of section 1 on tablet */
+    /* about section on tablet */
+    .about {
+        display: flex;
+        height: 80vh;
+        color: #fff;
+        min-height: 500px;
+    }
+    .about .layout {
+        margin-top: 90px;
+        margin-left:20px;
+    }
+    .about .about-content .title-about {
+        font-size: 24px;
+        font-weight: 700;
+        color: rgb(184, 175, 175);
+       
+    }
+    .about .about-content .title-about span {
+        font-size: 26px;
+        color: rgb(9, 226, 190);
+        font-family: 'Source Code Pro', sans-serif;
+    }
+    .about .about-content .title-about .line {
+        width: 400px;
+        height: 1px;
+        vertical-align: middle;
+        margin-left: 14px;
+    
+    }
+    .about-text {
+        font-size: 15px;
+        
+    }
+          
+    /* .row {
+        display: block;
+    }   */
+    .about .row img {
+        filter: grayscale(100%);
+        height: 175px;
+        width: 175px;
+        margin-left: 30px;
+        margin-top: 50px;
+        border-radius: 100%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 10px 25px 0 rgba(0, 0, 0, 0.15);
+    }
+    /* end of about section on tablet */
+
+    /* projects section on tablet */
+   
+    .projects .layout {
+        margin-top: 250px;
+        margin-left: 90px;
+    }
+    .projects .projects-content .title-projects {
+        
+        font-size: 25px;
+        font-weight: 700;
+        color: rgb(184, 175, 175);
+       
+    }
+    .projects .projects-content .title-projects span {
+        font-size: 26px;
+        color: rgb(9, 226, 190);
+        font-family: 'Source Code Pro', sans-serif;
+    }
+    .project-1 {
+        height: 80vh;
+    }
+    .project-1 .row img {
+        filter: grayscale(100%);
+        height: 230px;
+        width: 430px;
+        margin-left: 50px;
+        margin-top: 50px;
+        margin-right: 20px;
+    }
+    .projects-1-text {
+        margin-top: 50px;
+        font-size: 14px;
+        margin: 5px 0;
+        color: rgb(179, 172, 172);
+        font-weight: 500;
+    }
+    
+    .projects-1-text span {
+        color: rgb(9, 226, 190);
+        font-family: 'Source Code Pro', sans-serif;
+    }
+    .projects-1-text .name {
+        font-size: 17px;
+        font-weight: 600;
+    }
+
+    .projects-1-text .project-1-lang {
+        margin-top: 50px;
+        font-family: 'Source Code Pro';
+        justify-content: space-between;
+        font-size: 15px;
+    }
+    .project-2 {
+        height: 80vh;
+    }
+    .project-2 .row img {
+        filter: grayscale(100%);
+        height: 230px;
+        width: 430px;
+        margin-left: 50px;
+        margin-top: 50px;
+        margin-right: 20px;
+    }
+    .projects-2-text {
+        margin-top: 50px;
+        font-size: 14px;
+        margin: 5px 0;
+        color: rgb(179, 172, 172);
+        font-weight: 500;
+    }
+    
+    .projects-2-text span {
+        color: rgb(9, 226, 190);
+        font-family: 'Source Code Pro', sans-serif;
+    }
+    .projects-2-text .name {
+        font-size: 17px;
+        font-weight: 600;
+    }
+
+    .projects-2-text .project-1-lang {
+        margin-top: 50px;
+        font-family: 'Source Code Pro';
+        justify-content: space-between;
+        font-size: 15px;
+    }
+    /* end of projects section on tablet */
+
+    /* contact section on tablet */
+    .contact {
+        margin-top: 400px;
+        height: 90vh;
+    }
+    .contact .layout {
+        margin-top: 400px;
+        margin-left: 70px;
+    }
+    .contact .contact-content .title-contact {  
+        font-size: 25px; 
+    }
+    .contact .contact-content .title-contact span {
+        font-size: 26px;
+    }
+    .contact .contact-content .title-contact .line {
+        width: 350px;    
+    }
+
+
+    
+      .contact-c {
+        width: 600px;
+      }
+    /* end of contact section on tablet */
+
+    .footer {
+        margin-top: 400px;
+        font-size: 16px;
+        width: 100%;
+    }
+}
+@media (max-width: 800px) {
+    /* navbar on phone */
+    .navbar {
+        padding: 10px 20px;
+    }
+    .layout {
+        max-width: 400px;
+        padding: 0 10px;
+        margin: auto;
+    }
+
+/* end Navigation Bar on tablet  */
+/* section one name.. on tablet */
+    .home .layout {
+        margin-top: 130px;
+        margin-left: 8px;
+    }
+    .home .home-content .text-2 {
+        font-size: 25px;
+        font-weight: 600;
+        color: rgb(184, 175, 175);
+    }
+    .home .home-content .text-3 {
+        font-size: 20px;
+        margin: 5px 0;
+        color: rgb(114, 114, 114);
+        font-weight: 700;
+    }
+    .home .home-content .text-4 {
+        font-size: 15px;
+        margin: 5px 0;
+        color: rgb(179, 172, 172);
+        font-weight: 500;
+    }
+    /* end of section 1 on tablet */
+    /* about section on tablet */
+    .about {
+        display: block;
+        height: 65vh;
+        color: #fff;
+        min-height: 400px;
+    }
+    .about .layout {
+        margin-top: 60px;
+        margin-left:7px;
+    }
+    .about .about-content .title-about {
+        font-size: 17px;
+        font-weight: 600;
+        color: rgb(184, 175, 175);
+    
+    }
+    .about .about-content .title-about span {
+        font-size: 16px;
+        color: rgb(9, 226, 190);
+        font-family: 'Source Code Pro', sans-serif;
+    }
+    .about .about-content .title-about .line {
+        width: 150px;
+        height: 1px;
+        vertical-align: middle;
+        margin-left: 14px;
+
+    }
+    .about-text {
+        font-size: 12px;
+        
+    }
+        
+    /* .row {
+        display: block;
+    }   */
+    .about .row img {
+        filter: grayscale(100%);
+        height: 90px;
+        width: 90px;
+        margin-left: 15px;
+        margin-top: 50px;
+        border-radius: 100%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 10px 25px 0 rgba(0, 0, 0, 0.15);
+    }
+    /* end of about section on tablet */
+
+    /* projects section on tablet */
+
+    .projects .layout {
+        margin-top: 400px;
+        margin-left: 25px;
+    }
+    .projects .projects-content .title-projects {
+        font-size: 17px;
+        font-weight: 600;
+        color: rgb(184, 175, 175)
+    
+    }
+    .projects .projects-content .title-projects span {
+        font-size: 16px;
+        color: rgb(9, 226, 190);
+        font-family: 'Source Code Pro', sans-serif;
+    }
+    .projects .projects-content .title-projects .line {
+        width: 150px;
+        height: 1px;
+        vertical-align: middle;
+        margin-left: 14px;
+
+    }
+    .project-1 {
+        height: 60vh;
+    
+    }
+    .project-1 .row {
+        display: block;
+    }
+    .project-1 .row img {
+        filter: grayscale(100%);
+        height: 135px;
+        width: 250px;
+        margin-left: 4px;
+        margin-top: 30px;
+        margin-right: 20px;
+    }
+    .projects-1-text {
+        margin-top: 50px;
+        font-size: 15px;
+        margin: 5px 0;
+        color: rgb(179, 172, 172);
+        font-weight: 500;
+    }
+
+    .projects-1-text span {
+        color: rgb(9, 226, 190);
+        font-family: 'Source Code Pro', sans-serif;
+    }
+    .projects-1-text .name {
+        font-size: 17px;
+        font-weight: 600;
+    }
+
+    .projects-1-text .project-1-lang {
+        margin-top: 50px;
+        font-family: 'Source Code Pro';
+        justify-content: space-between;
+        font-size: 13px;
+    }
+    .project-2 {
+        height: 60vh;
+        margin-top: 100px;
+    }
+    .project-2 .row {
+        display: inline-block;
+    }
+    .project-2 .row img {
+        filter: grayscale(100%);
+        height: 150px;
+        width: 250px;
+        margin-left: 7px;
+        margin-top: 50px;
+        margin-right: 20px;
+    }
+    .projects-2-text {
+        margin-top: 50px;
+        font-size: 15px;
+        margin: 5px 0;
+        color: rgb(179, 172, 172);
+        font-weight: 500;
+        
+    }
+
+    .projects-2-text span {
+        
+        color: rgb(9, 226, 190);
+        font-family: 'Source Code Pro', sans-serif;
+    }
+    .projects-2-text .name {
+        font-size: 17px;
+        font-weight: 600;
+    }
+
+    .projects-2-text .project-2-lang {
+        margin-top: 20px;
+        font-family: 'Source Code Pro';
+        font-size: 15px;
+    }
+    /* end of projects section on tablet */
+
+    /* contact section on tablet */
+    .contact {
+        margin-top: 700px;
+        height: 90vh;
+    }
+    .contact .layout {
+        margin-top: 150px;
+        margin-left: 10px;
+    }
+    .contact .contact-content .title-contact {  
+        font-size: 17px;
+        font-weight: 600;
+        color: rgb(184, 175, 175)
+    }
+    .contact .contact-content .title-contact span {
+        font-size: 20px;
+        color: rgb(9, 226, 190);
+        font-family: 'Source Code Pro', sans-serif;
+    }
+    .contact .contact-content .title-contact .line {
+        width: 150px;
+        height: 1px;
+        vertical-align: middle;
+        margin-left: 14px;
+    
+    }
+
+.contact-c input[type=text], select, textarea {    
+
+    padding: 8px; 
+
+
+  }
+
+  .contact-c {
+    width: 100%;
+  }
+    /* end of contact section on tablet */
+
+    .footer {
+        margin-top: 400px;
+        font-size: 16px;
+        width: 100%;
+    }
+}
