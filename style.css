@@ -185,7 +185,7 @@ body {
 }
 
 
-ul {
+.technologies ul {
     list-style: none;
     padding-left: 0;
     float: left;
@@ -193,7 +193,7 @@ ul {
     margin-right: 50px;
   }
   
-  li {
+  .technologies ul li {
     margin-bottom: 10px;
   }
   
@@ -206,7 +206,6 @@ ul {
   .left [class^="icon"], .right [class^="icon"]  {
     width: 12px;
     height: 12px;
-
   }
   
 .row {
@@ -425,6 +424,8 @@ ul {
     padding: 25px 40px 10px 40px;
     border-radius: 14px;
   }
+
+  
   .footer {
       margin-top: 400px;
       text-align: center;
@@ -432,6 +433,19 @@ ul {
       color: rgb(184, 175, 175);
       font-family: 'Poppins', sans-serif;
       width: 100%;
+      display: block;
+  }
+  .social-media a {
+      color: rgb(184, 175, 175);
+      font-size: 25px;
+      margin-left: 10px;
+  }
+  .social-media a:hover {
+      color:rgb(9, 226, 190);   
+     }
+  .social-media {
+      margin-bottom: 20px;
+      
   }
   .container_r {
     background: rgb(235, 228, 228);
