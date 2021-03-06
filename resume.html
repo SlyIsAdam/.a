@@ -161,23 +161,32 @@
     </section>
    
     <section class="footer">
+        <div class="social-media">
+            
+                <a href="https://www.instagram.com/adamabouzeidd/"><span class="iconify" data-icon="ph:instagram-logo" data-inline="false"></span></a>
+                <a href="https://www.facebook.com/Adam.abou.zeid.13/"><span class="iconify" data-icon="bx:bxl-facebook" data-inline="false"></span></a>
+                <a href="https://wa.me/96181997027"><span class="iconify" data-icon="bx:bxl-whatsapp" data-inline="false"></span></a>
+            
+        </div>
         <div class="text-footer">
             Designed and Built by Adam Abou Zeid <br> All Rights Reserved
         </div>
     </section>
+
+
     <script type="text/javascript">
 
 
-        /* add class name sticky to the navbar when the vertical scroll is greater than 60 */
+        /* add class name scrolling to the navbar when the vertical scroll is greater than 60 */
         window.addEventListener("scroll", function (){
             document.querySelector(".navbar").classList.toggle('scrolling', window.scrollY > 60);
         });
         /* for mobile/tablet navbar */
-        document.querySelector('.mta-mobile').addEventListener("click", () => {
+        document.querySelector('.mta-mobile').addEventListener("click", function () {
             document.querySelector('.nav').classList.add('opened');
         });
     
-        document.querySelector('.cta-mobile').addEventListener("click", () => {
+        document.querySelector('.cta-mobile').addEventListener("click", function (){
             document.querySelector('.nav').classList.remove('opened');
         });
     
